@@ -1,0 +1,110 @@
+=========================================
+PESQUISA SOBRE JAVASCRIPT
+=========================================
+
+O que é JavaScript?
+--------------------
+JavaScript (JS) é uma linguagem de programação usada, principalmente, para criar interatividade em páginas web.
+É executado pelo navegador (como Chrome, Firefox, etc.) e também pode ser usado no servidor com Node.js.
+
+Funciona em conjunto com:
+- HTML: estrutura da página
+- CSS: aparência
+- JavaScript: comportamento (ex: cliques, animações, formulários dinâmicos)
+
+-----------------------------------------
+COMO FUNCIONA O JAVASCRIPT?
+-----------------------------------------
+1. O navegador interpreta o código JavaScript linha por linha.
+2. Ele é executado diretamente no cliente (usuário), mas também pode ser usado no servidor.
+3. Pode responder a eventos como cliques, envios de formulários, movimentação do mouse, etc.
+
+-----------------------------------------
+PRINCIPAIS PARTES DO JAVASCRIPT
+-----------------------------------------
+
+1. VARIÁVEIS
+-------------
+Usadas para armazenar dados temporariamente.
+
+Exemplos:
+    let nome = "Maria";
+    const idade = 25;
+
+2. TIPOS DE DADOS
+-------------------
+- String: "texto"
+- Number: 10, 3.14
+- Boolean: true, false
+- Array: [1, 2, 3]
+- Objeto: {nome: "Ana", idade: 30}
+
+3. FUNÇÕES
+------------
+Blocos de código que executam uma tarefa específica.
+
+Exemplo:
+    function saudacao(nome) {
+        console.log("Olá, " + nome);
+    }
+
+4. CONDICIONAIS
+-----------------
+Usadas para tomar decisões com base em condições.
+
+Exemplo:
+    if (idade >= 18) {
+        console.log("É maior de idade");
+    } else {
+        console.log("É menor de idade");
+    }
+
+5. LOOPS (LAÇOS DE REPETIÇÃO)
+-------------------------------
+Permitem repetir um bloco de código várias vezes.
+
+Exemplo:
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+    }
+
+6. EVENTOS
+-----------
+Permitem responder a ações do usuário.
+
+Exemplo:
+    document.querySelector("button").addEventListener("click", function() {
+        alert("Botão clicado!");
+    });
+
+7. MANIPULAÇÃO DO DOM
+-----------------------
+DOM = Document Object Model → estrutura da página.
+
+Exemplo:
+    document.getElementById("titulo").innerText = "Novo Título";
+
+-----------------------------------------
+CURIOSIDADES E PONTOS IMPORTANTES
+-----------------------------------------
+- JavaScript é case-sensitive (diferencia maiúsculas e minúsculas).
+- Suporta programação assíncrona com Promises e async/await.
+- É uma linguagem essencial para quem trabalha com desenvolvimento web.
+- É usado em frameworks como React, Angular e Vue.
+
+-----------------------------------------
+RESUMO FINAL
+-----------------------------------------
+
+| Conceito     | Explicação Rápida                       |
+|--------------|------------------------------------------|
+| Linguagem    | Interpretada, usada para web             |
+| Variáveis    | Guardam dados                            |
+| Funções      | Executam tarefas                         |
+| Eventos      | Respondem a ações do usuário             |
+| DOM          | Permite alterar a página via código      |
+| Assíncrono   | Executa tarefas em segundo plano         |
+
+=========================================
+FIM DA PESQUISA SOBRE JAVASCRIPT
+=========================================
