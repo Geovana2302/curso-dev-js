@@ -1,0 +1,46 @@
+Estudo de caso
+Sistema de Hamburgueria
+
+Requisitos Fumcionais (RF)
+    *Tela de Login
+    *Cadastro de Cliente
+        -Clientes
+        -Funcionarios
+    *Cadastro de produtos
+    *Catalogo de produtos
+        -Com descrição
+        -Igredientes
+        -Tempo de Entrega
+        -Valor do produto
+    *Área de pagamento
+    *Pesquisa de produtos
+    *Carrinho de compras
+    *Area para observação do produto
+    *Chat direto com Hamburgueria
+    *Cancelar pedido
+    *Validação de cartão de crédito
+
+
+Requisitos Não Funcionais (RNF)
+    *Validação de Email
+    *Deve ser responsivo
+    *Cupons de desconto
+    *Itens promocionais
+    *Status de pedido
+    *Atender a LGPD
+    *Backup
+    *Acessibilidade
+    *Criptografia de dados
+    *Funcionalidade 24/7
+    *Conexões segura HTTPS
+
+
+
+Regras de Negócio (RN)
+*Propaganda
+*Prazo de entrega
+*Prazo para buscar pedido
+*Se o lanche não estiver de acordo (Sera devolvido)
+*Cadastro para maiores de 15 anos
+*Usuário deve aceitar os termos
+*Avaliação do Cliente

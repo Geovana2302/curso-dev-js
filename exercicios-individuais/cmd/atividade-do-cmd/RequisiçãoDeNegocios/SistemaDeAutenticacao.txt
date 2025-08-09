@@ -50,7 +50,7 @@ Regras de Negócio (RN)
     *Configuração para adicionar novos dados
     *Apenas Funcionários
     *Propaganda da Empresa
-    *Rquisitos mínimo de senha 12 chars (Mm#)
+    *Requisitos mínimo de senha 12 chars (Mm#)
     *Nova senha não pode ser igual as  últimas 10
     *Usuário/Email único
     *Casdastro para maiores de 13 anos
