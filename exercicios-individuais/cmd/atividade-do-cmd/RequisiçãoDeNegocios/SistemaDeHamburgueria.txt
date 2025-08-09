@@ -12,13 +12,22 @@ Requisitos Fumcionais (RF)
         -Igredientes
         -Tempo de Entrega
         -Valor do produto
+    *Filtro de produtos
     *Área de pagamento
+    *Cadastro de endereço
+    *Tela do pedido
     *Pesquisa de produtos
     *Carrinho de compras
     *Area para observação do produto
     *Chat direto com Hamburgueria
     *Cancelar pedido
     *Validação de cartão de crédito
+    *Estoque
+    *Gerar pedidos unicos
+    *Tela de Avaliação do Cliente
+    *Cadastro de promoções
+    
+
 
 
 Requisitos Não Funcionais (RNF)
@@ -33,14 +42,22 @@ Requisitos Não Funcionais (RNF)
     *Criptografia de dados
     *Funcionalidade 24/7
     *Conexões segura HTTPS
+    *Integração com outras plataformas
+    *Atender várias requisições ao mesmo Tempo
+    *Conexões segura
+
 
 
 
 Regras de Negócio (RN)
     *Propaganda
     *Prazo de entrega
+    *Entrega mínima de 20,00
     *Prazo para buscar pedido
     *Se o lanche não estiver de acordo (Sera devolvido)
     *Cadastro para maiores de 15 anos
     *Usuário deve aceitar os termos
     *Avaliação do Cliente
+    *Limite de adicionais por pedido
+    *Desconto
+    *Pedido sem cadastro (com limitações)
