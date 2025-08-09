@@ -2,6 +2,8 @@ Estudo de caso
 Login, Cadastro de novos Usuários e recuperação de senha.
 
 Requisitos Fumcionais (RF)
+    *Tela de Login
+    *Tela de esquecer a senha
     *Cadastro de novos Usuários
     *Dados do usuario:
         -Nome Completo
@@ -21,8 +23,12 @@ Requisitos Fumcionais (RF)
 
     *Permitir acesso a outros dispositivos
     *Notifição de email (ao recuperar senha)
+    *Enviar email confirmação
     *Verificação de dados (se este usuario ja esta cadastrado)
     *Verificação de senha
+    *Dupla autenticação
+    *Registrar data/hora de acessos
+    *Bloquear numero X de tentativas
 
 
 Requisitos Não Funcionais (RNF)
@@ -32,8 +38,21 @@ Requisitos Não Funcionais (RNF)
     *Atender a LGPD
     *Acessibilidade
     *Backup
+    *TEmpo de autendicação 2°
+    *Funcionalidade mínimo sem Conexões
+    *REsponsividade
+    *Conexões segura HTTPS
+    *Funcionamento 24/7
+    *Feedback usuário (erros e informações)
 
 Regras de Negócio (RN)
     *Precisa ser vinulado a algum sistema
     *Configuração para adicionar novos dados
-
+    *Apenas Funcionários
+    *Propaganda da Empresa
+    *Rquisitos mínimo de senha 12 chars (Mm#)
+    *Nova senha não pode ser igual as  últimas 10
+    *Usuário/Email único
+    *Casdastro para maiores de 13 anos
+    *Trava de Hórario de acesso
+    *Usuário deve aceitar os termos
