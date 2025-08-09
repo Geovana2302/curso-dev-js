@@ -1,0 +1,39 @@
+Estudo de caso
+Login, Cadastro de novos Usuários e recuperação de senha.
+
+Requisitos Fumcionais (RF)
+    *Cadastro de novos Usuários
+    *Dados do usuario:
+        -Nome Completo
+        -Email
+        -Confirmação de Enail
+        -DataDeNascimento
+        -Número de Celular
+        -Documento
+        -Nome de Usuário
+        -Senha
+        -Confirmação de Senha
+
+    *Conexões/Sincronizações
+        -Google
+        -Facebook
+        -Número de Celular
+
+    *Permitir acesso a outros dispositivos
+    *Notifição de email (ao recuperar senha)
+    *Verificação de dados (se este usuario ja esta cadastrado)
+    *Verificação de senha
+
+
+Requisitos Não Funcionais (RNF)
+    *Deve ser responsivo
+    *Multiplataforma
+    *Criptografia de  dados
+    *Atender a LGPD
+    *Acessibilidade
+    *Backup
+
+Regras de Negócio (RN)
+    *Precisa ser vinulado a algum sistema
+    *Configuração para adicionar novos dados
+
