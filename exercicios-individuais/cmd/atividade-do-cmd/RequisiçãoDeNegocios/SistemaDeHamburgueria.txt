@@ -37,10 +37,10 @@ Requisitos Não Funcionais (RNF)
 
 
 Regras de Negócio (RN)
-*Propaganda
-*Prazo de entrega
-*Prazo para buscar pedido
-*Se o lanche não estiver de acordo (Sera devolvido)
-*Cadastro para maiores de 15 anos
-*Usuário deve aceitar os termos
-*Avaliação do Cliente
+    *Propaganda
+    *Prazo de entrega
+    *Prazo para buscar pedido
+    *Se o lanche não estiver de acordo (Sera devolvido)
+    *Cadastro para maiores de 15 anos
+    *Usuário deve aceitar os termos
+    *Avaliação do Cliente
