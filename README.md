@@ -1,23 +1,48 @@
-# Repositório de Versionamento com Git e GitHub
+# 📁 Repositório do Curso de JavaScript — Versionamento com Git e GitHub
 
-Este repositório será utilizado ao longo do meu curso de JavaScript para armazenar, organizar e versionar todas as atividades práticas e individuais.
+Este repositório foi criado para organizar, versionar e documentar todas as atividades desenvolvidas ao longo do **curso de JavaScript**, com foco em boas práticas de **versionamento utilizando Git e GitHub**.
 
-# Objetivo
-- Aplicar conceitos de versionamento utilizando Git e GitHub  
-- Documentar o progresso e as atividades desenvolvidas durante o curso  
-- Criar um histórico bem estruturado para facilitar revisões e consultas futuras  
+## 🗓️ Informações do Curso
 
-# Conteúdo
-Ao longo do curso, este repositório será atualizado com:  
-- Atividades práticas realizadas em aula  
-- Exercícios individuais  
-- Projetos e desafios propostos  
-- Anotações e aprendizados importantes  
+- **Período:** 19/07/2025 a 25/10/2025  
+- **Professor(a):** Lucas Torquato  
+- **Instituição:** SENAI
 
-# Tecnologias Utilizadas
-- JavaScript (JS)  
-- Git  
-- GitHub  
+---
 
-# Atualizações
-Este repositório será constantemente atualizado conforme o andamento do curso.
+## 🎯 Objetivos
+
+- Praticar o uso do Git e GitHub em um fluxo de trabalho real  
+- Documentar o progresso individual no curso de JavaScript  
+- Criar um histórico de aprendizado claro e consultável  
+- Organizar o código e as anotações de forma eficiente  
+
+---
+
+## 📚 Conteúdo do Repositório
+
+Ao longo do curso, este repositório será constantemente atualizado com:
+
+- ✅ Atividades práticas desenvolvidas em sala de aula  
+- 🧠 Exercícios e desafios individuais  
+- 🛠️ Projetos e aplicações em JavaScript  
+- 📝 Anotações e resumos de conceitos importantes  
+
+---
+
+## 💻 Tecnologias e Ferramentas
+
+- **JavaScript (JS)**  
+- **HTML**  
+- **CSS**  
+- **Git**  
+- **GitHub**
+
+---
+
+## 📌 Observações
+
+Este repositório reflete minha evolução durante o curso.  
+Sinta-se à vontade para explorar os arquivos, acompanhar meu progresso ou sugerir melhorias!
+
+---
