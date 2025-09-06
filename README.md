@@ -1,45 +1,48 @@
-📁 Repositório do Curso de JavaScript — Versionamento com Git e GitHub
+# 📁 Repositório do Curso de JavaScript — Versionamento com Git e GitHub
 
-Este repositório foi criado para organizar, versionar e documentar todas as atividades desenvolvidas ao longo do curso de JavaScript, com foco em boas práticas de versionamento utilizando Git e GitHub.
+Este repositório foi criado para organizar, versionar e documentar todas as atividades desenvolvidas ao longo do **curso de JavaScript**, com foco em boas práticas de **versionamento utilizando Git e GitHub**.
 
-📅 Período: 19/07/2025 a 25/10/2025
-👨‍🏫 Professor: Lucas Torquato
-🏫 Instituição: SENAI
+## 🗓️ Informações do Curso
 
-🎯 Objetivos
+- **Período:** 19/07/2025 a 25/10/2025  
+- **Professor(a):** Lucas Torquato  
+- **Instituição:** SENAI
 
-Praticar o uso do Git e GitHub em um fluxo de trabalho real
+---
 
-Documentar o progresso individual no curso de JavaScript
+## 🎯 Objetivos
 
-Criar um histórico de aprendizado claro e consultável
+- Praticar o uso do Git e GitHub em um fluxo de trabalho real  
+- Documentar o progresso individual no curso de JavaScript  
+- Criar um histórico de aprendizado claro e consultável  
+- Organizar o código e as anotações de forma eficiente  
 
-Organizar o código e as anotações de forma eficiente
+---
 
-📚 Conteúdo do Repositório
+## 📚 Conteúdo do Repositório
 
 Ao longo do curso, este repositório será constantemente atualizado com:
 
-✅ Atividades práticas desenvolvidas em sala de aula
+- ✅ Atividades práticas desenvolvidas em sala de aula  
+- 🧠 Exercícios e desafios individuais  
+- 🛠️ Projetos e aplicações em JavaScript  
+- 📝 Anotações e resumos de conceitos importantes  
 
-🧠 Exercícios e desafios individuais
+---
 
-🛠️ Projetos e aplicações em JavaScript
+## 💻 Tecnologias e Ferramentas
 
-📝 Anotações e resumos de conceitos importantes
+- **JavaScript (JS)**  
+- **HTML**  
+- **CSS**  
+- **Git**  
+- **GitHub**
 
-💻 Tecnologias e Ferramentas
+---
 
-JavaScript (JS) — Lógica de programação, manipulação de DOM, etc.
+## 📌 Observações
 
-HTML — Estruturação de páginas
+Este repositório reflete minha evolução durante o curso.  
+Sinta-se à vontade para explorar os arquivos, acompanhar meu progresso ou sugerir melhorias!
 
-CSS — Estilização
-
-Git — Controle de versão local
-
-GitHub — Repositório remoto e colaboração
-
-🚀 Observações
-
-Este repositório reflete minha evolução ao longo do curso. Sinta-se à vontade para explorar os arquivos, acompanhar meu progresso ou até mesmo sugerir melhorias!
+---
