@@ -57,6 +57,19 @@
         </div>
     </div>
 
+    <script>
+        // 1
+        
+        document.querySelector("#btn-converter").addEventListener('click', function(){
+            const ValorReal = Number(document.querySelector('#valor-real').value);
+            const ValorConvertido = ValorReal / 5.30;
+            document.querySelector("#resultado").textContent = ValorConvertido.toFixed(2);
+        })
+
+        //2
+
+    </script>
+
 </body>
 
 </html>
