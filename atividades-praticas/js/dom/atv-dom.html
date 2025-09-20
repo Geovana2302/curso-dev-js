@@ -67,7 +67,19 @@
         })
 
         //2
+        document.querySelector("#btn-calcular-desconto").addEventListener('click', function(){
+            const Preco = Number(document.querySelector('#preco').value);
+            const Desconto = Number(document.querySelector('#desconto').value);
+            document.querySelector("#resultado_desconto").textContent = Preco - (Preco * (Desconto / 100));
+        })
 
+
+        //3
+        document.querySelector("#btn-calcular-imc").addEventListener('click', function(){
+            const Peso = Number(document.querySelector('#peso').value);
+            const Altura = Number(document.querySelector('#altura').value);
+            document.querySelector("#resultado_imc").textContent = (Peso / Altura ** 2).toFixed(2);
+        })
     </script>
 
 </body>
