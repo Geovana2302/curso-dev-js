@@ -61,14 +61,23 @@
         const paragrafoExemplo = document.querySelector("#paragrafo-exemplo");
 
         function  lerTextoParagrafo(){
-            const lerTextoParagrafo = paragrafoExemplo.textContent;
+            const textoParagrafo = paragrafoExemplo.textContent;
 
             alert(textoParagrafo);
             console.log(textoParagrafo);
         }
 
-        btnLer.addEventListener
+        btnLer.addEventListener('click', lerTextoParagrafo)
+
+        //2
+
+        const btnMudar = document.querySelector("#btn-mudar");
+        const tituloMudar = document.querySelector("#titulo-para-mudar");
+
+        btnMudar.addEventListener('click', function(){
+            
+        })
 
     </script>
 </body>
-</html>
+</html>         
