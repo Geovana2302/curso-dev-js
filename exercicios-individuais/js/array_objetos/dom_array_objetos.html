@@ -61,8 +61,44 @@
         const iptNome = document.querySelector("#nome");
         const ipIdade = document.querySelector("#idade");
         const ipCurso = document.querySelector("#curso");
+        const btnCadastrar = document.querySelector("#btn-salvar");
+        const btnCancelar = document.querySelector("#btn-cancelar");
+
+        const alunos = [];
+
+        function cadastrar(){
+            const nome = iptNome.value.trim();
+            const idade = Number(ipIdade.value.trim());
+            const curso = ipCurso.value.trim();
+            
+            if (nome && idade && curso){
+                alunos.push({nome, idade, curso});
+                alert("Aluno cadastrado com sucesso!");
+            } else{
+                alert("Preencha todos os campos!");
+            }
+            
+        }
+
+
+        function cancelar(){
+            iptNome.value = "";
+            ipIdade.value = "";
+            ipCurso.value = "";
+
+        }
+
+        btnCadastrar.addEventListener('click', cadastrar);
+        btnCancelar.addEventListener('click', cancelar);
+
+        const nome = document.querySelector("#aluno-nome");
+        const idade = document.querySelector("#aluno-idade");
+        const curso = document.querySelector("#aluno-curso");
+        const btnAnterior = document.querySelector("#btn-anterior");
+        const brnProximo = document.querySelector("#btn-proximo");
 
         
+
 
 
     </script>
