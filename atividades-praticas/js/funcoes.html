@@ -51,7 +51,56 @@
         }
         console.log(multiplicar(3,3));
 
-        const dividir = (n1,n2) => n1 / n2
+        const dividir = (n1,n2) => n1 / n2 //return implicito
+        console.log(dividir(2,2));
+
+        //função com parâmetro padrão/opcional
+        function cumprimentar(nome="Visitante"){
+            console.log(`Olá, ${nome}`)
+        }
+        cumprimentar();
+        cumprimentar("Geovana");
+
+        //função callback
+        function calcular(n1, n2, operacao){
+            return operacao(n1,n2);
+        }
+
+        console.log(calcular(2,2,soma));
+        console.log(calcular(2,2,multiplicar));
+        console.log(calcular(5,2,subtrair));
+        console.log(calcular(2,2,dividir));
+        
+        //função assincrona
+        async function buscarDadosFeriados(){
+            const resposta = await fetch("https://brasilapi.com.br/api/feriados/v1/2025");
+            const dados = await resposta.json();
+            console.log(dados)
+        }
+        buscarDadosFeriados();
+
+
+        //Exercicio1
+        const calcularArea = (altura,largura) => {
+            return altura * largura;
+        }
+        console.log(calcularArea(10,5));
+
+        //Exercicio2
+        function ehPar(numero){
+            return numero % 2 == 0;
+        }
+        console.log(ehPar(6));
+        console.log(ehPar(2));
+        console.log(ehPar(1));
+        console.log(ehPar(3));
+        console.log(ehPar(15));
+
+        //Exercicio3
+        function celsiusParaFahrenheit (temperaturaCelsius) {
+            return (temperaturaCelsius * 9/5) + 32;
+        }
+        console.log(celsiusParaFahrenheit(32).toFixed(1))
 
     </script>
 
