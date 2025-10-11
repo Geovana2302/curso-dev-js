@@ -48,6 +48,17 @@ function calcularTaxaDeUrgencia(valor, prazo){
 
         const valorDesconto = calcularValorDesconto ((subtotal + adicionalDesing + taxaUrgencia),
         porcentagemDesconto);
+
+        const total = (subtotal + adicionalDesing + taxaUrgencia) - valorDesconto;
+
+        resumoSubTotal.textContent = subtotal;
+        resumoAdicional.textContent = adicionalDesing;
+        resumoUrgencia.textContent = taxaUrgencia;
+        resumoDesconto.textContent = valorDesconto;
+        resumoTotal.textContent = total;
+
+        Linda <3
+        
     }
 
 }
