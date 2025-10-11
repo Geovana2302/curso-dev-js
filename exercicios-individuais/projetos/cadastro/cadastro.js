@@ -1,7 +1,7 @@
 document.querySelector('.seu-nome').textContent = "Geovana Moreira Bicalho";
 
 
-const usuarios = JSON.parse(localStorage.getItem("cadastro_usuarios")) || [];
+let usuarios = JSON.parse(localStorage.getItem("cadastro_usuarios")) || [];
 
 //Telas
 const telaLista = document.querySelector
@@ -95,7 +95,7 @@ function renderizarTabela(){
 }
 
 function excluirUsuario(id){
-    if (confirm("Você deseja excluir esse usuário?")){
+    if (confirm("Você deseja realmente excluir esse usuário?")){
         console.log(id);
         usuarios = usuarios.filter(user => user.id !== id);
         salvarStorage();
@@ -113,7 +113,7 @@ function inicializar(){
         const target = event.target.closest("button");
         if(!target) return
 
-        const id = Number(target.dataset("id"));
+        const id = Number(target.dataset.id);
 
         if (isNaN(id)) return
 
