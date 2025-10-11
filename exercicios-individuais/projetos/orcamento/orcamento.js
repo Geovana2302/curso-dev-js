@@ -40,7 +40,14 @@ function calcularTaxaDeUrgencia(valor, prazo){
         const designIncluido = checkboxDesing.checked; // true e false;
 
         const subtotal = calcularSubTotal(qtdPaginas)
-        const adicionalDesing = designIncluido ? PRECO_DESING_ADICIONAL : 0;
+        const adicionalDesing = designIncluido ?
+        PRECO_DESING_ADICIONAL : 0;
+
+        const taxaUrgencia = calcularTaxaDeUrgencia
+        ((subtotal + adicionalDesing), prazo);
+
+        const valorDesconto = calcularValorDesconto ((subtotal + adicionalDesing + taxaUrgencia),
+        porcentagemDesconto);
     }
 
 }
