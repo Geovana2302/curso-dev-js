@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade: Repetições JS</title>
+</head>
+<body>
+    <h1>Atividade de Repetições com JavaScript</h1>
+    <p>
+        Abra o console do navegador (pressione F12) para ver os resultados dos exercícios.
+    </p>
+
+    <script>
+        // --- Exercício 1: Contador de 1 até 10 ---
+        // Utiliza um laço 'for' para contar de 1 a 10 e exibir cada número.
+        function exercicio1() {
+            console.log("--- Resultado do Exercício 1 ---");
+            for (let i = 1; i <= 10; i++) {
+                console.log(`Contador: ${i}`);
+            }
+        }
+
+        // --- Exercício 2: Exibindo notas com .forEach() ---
+        // Percorre cada elemento do array e executa uma função para cada um.
+        function exercicio2() {
+            console.log("\n--- Resultado do Exercício 2 ---");
+            const notas = [8.5, 9.0, 6.5, 7.0, 10.0, 5.5];
+
+            notas.forEach(function(nota) {
+                console.log(`A nota do aluno é ${nota}.`);
+            });
+        }
+
+        // --- Exercício 3: Adicionando pontos com .map() ---
+        // Cria um NOVO array com base no array original, aplicando uma transformação.
+        function exercicio3() {
+            console.log("\n--- Resultado do Exercício 3 ---");
+            const notas = [6.5, 9.5, 10.0, 8.0, 9.8];
+            console.log("Notas originais:", notas);
+
+            const notasAtualizadas = notas.map(function(nota) {
+                let novaNota = nota + 1;
+                // Se a nova nota passar de 10, ela será fixada em 10.
+                if (novaNota > 10) {
+                    return 10;
+                } else {
+                    return novaNota;
+                }
+                // Uma forma mais curta de escrever a lógica acima seria:
+                // return Math.min(nota + 1, 10);
+            });
+
+            console.log("Notas atualizadas (com 1 ponto extra):", notasAtualizadas);
+        }
+
+        // --- Exercício 4: Filtrando alunos aprovados com .filter() ---
+        // Cria um NOVO array contendo apenas os elementos que passam em um teste (condição).
+        function exercicio4() {
+            console.log("\n--- Resultado do Exercício 4 ---");
+            const notas = [5.0, 8.5, 9.2, 6.9, 7.0, 10.0, 4.5];
+            console.log("Todas as notas:", notas);
+
+            const aprovados = notas.filter(function(nota) {
+                return nota >= 7; // A condição para o filtro
+            });
+
+            console.log("Notas dos alunos aprovados:", aprovados);
+            console.log(`Quantidade de alunos aprovados: ${aprovados.length}`);
+        }
+
+        // --- Exercício 5: Filtrando números pares ---
+        // Cria um array de números aleatórios e depois usa .filter() para encontrar os pares.
+        function exercicio5() {
+            console.log("\n--- Resultado do Exercício 5 ---");
+            const numerosAleatorios = [];
+            
+            // Cria um array com 10 números inteiros aleatórios entre 1 e 100
+            for (let i = 0; i < 10; i++) {
+                numerosAleatorios.push(Math.floor(Math.random() * 100) + 1);
+            }
+            console.log("Array com números aleatórios:", numerosAleatorios);
+
+            // Filtra os números pares (o resto da divisão por 2 é igual a 0)
+            const numerosPares = numerosAleatorios.filter(function(numero) {
+                return numero % 2 === 0;
+            });
+
+            console.log("Array com os números pares:", numerosPares);
+            console.log(`Quantidade de números pares: ${numerosPares.length}`);
+        }
+
+
+        // --- Chamada das Funções ---
+        // Executa cada função para que os resultados apareçam no console.
+        exercicio1();
+        exercicio2();
+        exercicio3();
+        exercicio4();
+        exercicio5();
+
+    </script>
+</body>
+</html>
