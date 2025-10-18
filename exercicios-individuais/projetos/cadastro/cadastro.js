@@ -66,13 +66,19 @@ function salvarUsuario(){
     
     }
     if(idEmEdicao){
-        //edição
+        
+        const index = usuarios.findIndex(user => user.id === idEmEdicao); // index = 0; index = 2
+        if (index !== -1){
+            usuarios[index] = usuario;
+        }
+
     }else{
-        usuario.push
+        usuarios.push(usuario);
     }
 
-    usuarios.push(usuario);
     salvarStorage();
+    form.reset();
+    mostrarTelaLista();
 }
 
 
