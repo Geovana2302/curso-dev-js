@@ -31,6 +31,8 @@ const inputObs = document.querySelector("#user-obs");
 const form = document.querySelector("#user-form");
 const tabelaCorpo = document.querySelector("#user-table-body");
 
+let idEmEdicao = null;
+
 
 //Funções
 function mostrarTelaLista(){
@@ -48,6 +50,7 @@ function salvarUsuario(){
     const id = Number(inputId.value);
     const nome = inputNome.value;
     const sobrenome = inputSobrenome.value;
+    const cep = inputCEP.value;
     const email = inputEmail.value;
     const rua = inputRua.value;
     const numero = inputNumero.value;
@@ -58,16 +61,18 @@ function salvarUsuario(){
     const obs = inputObs.value;
     
     const usuario = {
-        id: id || Date.now(), nome, sobrenome, email,
+        id: id || Date.now(), nome, sobrenome, email, cep,
         rua, numero, complemento, bairro, cidade, estado, obs
     
     }
-    console.log(usuario)
+    if(idEmEdicao){
+        //edição
+    }else{
+        usuario.push
+    }
+
     usuarios.push(usuario);
     salvarStorage();
-    mostrarTelaLista();
-
-
 }
 
 
@@ -101,6 +106,33 @@ function excluirUsuario(id){
         salvarStorage();
         renderizarTabela();
     }
+}
+
+function editarUsuario(id){
+
+    const usuario = usuarios.find(user => user.id === id);
+
+    if (!usuario) return; 
+
+    idEmEdicao = id;
+
+    inputId.value = usuario.id;
+    inputNome.value = usuario.nome;
+    inputSobrenome.value = usuario.sobrenome;
+    inputEmail.value = usuario.email;
+    inputCEP.value = usuario.cep;
+    inputRua.value = usuario.rua;
+    inputNumero.value = usuario.numero;
+    inputComplemento.value = usuario.complemento;
+    inputBairro.value = usuario.bairro;
+    inputCidade.value = usuario.cidade;
+    inputEstado.value = usuario.estado;
+    inputObs.value = usuario.obs;
+
+    mostrarTelaCadastro()
+    
+
+
 }
 
 function inicializar(){
