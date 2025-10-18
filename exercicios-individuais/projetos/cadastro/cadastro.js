@@ -13,6 +13,9 @@ const telaCadastro = document.querySelector
 //Botões
 const btnAdicionar = document.querySelector("#btn-adicionar");
 const btnVoltarLista = document.querySelector("#btn-voltar-lista");
+const btnDownload = document.querySelector("#btn-download");
+const btnUpload = document.querySelector("#btn-upload");
+const inputUpload = document.querySelector("#input-upload")
 
 // Inputs
 const inputId = document.querySelector("#user-id");
@@ -32,6 +35,10 @@ const form = document.querySelector("#user-form");
 const tabelaCorpo = document.querySelector("#user-table-body");
 
 let idEmEdicao = null;
+
+const btnCep = document.querySelector("#btn-buscar-cep");
+
+const inputBusca = document.querySelector("#user-busca");
 
 
 //Funções
@@ -87,9 +94,9 @@ function salvarStorage(){
 
 }
 
-function renderizarTabela(){
+function renderizarTabela(usuariosFiltrados = usuarios){
     tabelaCorpo.innerHTML = "";
-    usuarios.forEach(user => {
+    usuariosFiltrados.forEach(user => {
         const tr = document.createElement("tr");
         tr.innerHTML = `
             <td>${user.nome}</td>
@@ -137,15 +144,91 @@ function editarUsuario(id){
 
     mostrarTelaCadastro()
     
+}
+
+async function buscarCep(){
+
+    const cep = inputCEP.value.replace(/\D/g,"");
+
+    if (cep.length === 8){
+
+    const resposta = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+
+    const dados = await resposta.json();
+
+    //console.log(dados);
+
+    if (!dados.erro){
+        inputCEP.value = dados.cep;
+        inputRua.value = dados.logradouro;
+        inputComplemento.value = dados.complemento;
+        inputBairro.value = dados.bairro;
+        inputCidade.value = dados.localidade;
+        inputEstado.value = dados.estado;
+    }else{
+        alert("CEP Inválido, tente novamente!");
+    }
+
+    }else{
+        alert("Verifique a quantidade de números digitados!");
+    }
+
+}
+
+function buscarUsuario(){
+    // toLowerCase => trasforma tudo em minusculo
+    // trim => remove todos os espaços dos extremos
+    const conteudo = inputBusca.value.toLowerCase().trim();
+
+    if (!conteudo){
+        renderizarTabela();
+        return;
+    }
+
+
+    const usuariosFiltrados = usuarios.filter(user => {
+        return user.nome.toLowerCase().trim().includes(conteudo) || 
+        user.sobrenome.toLowerCase().trim().includes(conteudo) || 
+        user.email.toLowerCase().trim().includes(conteudo);
+    });
+
+    console.log(usuariosFiltrados);
+
+    renderizarTabela(usuariosFiltrados);
+
+}
+function downloadArquivo(){
+    const dados = JSON.stringify(usuarios);
+    const arquivo = new Blob([dados], {type: "application/json"});
+    const url = URL.createObjectURL(arquivo);
+    const linkDowload = document.createElement("a");
+    linkDowload.href = url;
+    linkDowload.download = "usuarios.json";
+    linkDowload.click();
+    URL.revokeObjectURL(url);
 
 
 }
+function uploadArquivo(){
+
+}
+
+
 
 function inicializar(){
     btnAdicionar.addEventListener("click", mostrarTelaCadastro);
     btnVoltarLista.addEventListener("click", mostrarTelaLista);
+    btnCep.addEventListener("click",buscarCep);
+
     form.addEventListener("submit", salvarUsuario);
     mostrarTelaLista();
+
+    inputBusca.addEventListener("input", buscarUsuario);
+
+    btnDownload.addEventListener("click", downloadArquivo);
+    btnUpload.addEventListener("click", () => inputUpload.click());
+    inputUpload.addEventListener("change", uploadArquivo);
+
 
     tabelaCorpo.addEventListener("click",(event) => {
         const target = event.target.closest("button");
