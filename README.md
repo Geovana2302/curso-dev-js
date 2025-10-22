@@ -34,7 +34,8 @@ Ao longo do curso, este repositório será constantemente atualizado com:
 
 - **JavaScript (JS)**  
 - **HTML**  
-- **CSS**  
+- **CSS**
+- **Bootstrap**
 - **Git**  
 - **GitHub**
 
