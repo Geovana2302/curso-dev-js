@@ -33,7 +33,6 @@ header p {
     opacity: 0.9;
 }
 
-/* MAIN */
 main {
     flex: 1;
     max-width: 1000px;
@@ -46,7 +45,6 @@ main {
     gap: 25px;
 }
 
-/* CARD */
 .card {
     background: #fff;
     border-radius: 16px;
@@ -61,7 +59,6 @@ main {
     gap: 10px;
 }
 
-/* ÍCONE */
 .card::before {
     content: "📁";
     font-size: 26px;
@@ -76,33 +73,28 @@ main {
     justify-content: center;
 }
 
-/* TÍTULO */
 .card h3 {
     color: #5a4fff;
     font-size: 20px;
 }
 
-/* DESCRIÇÃO */
 .card p {
     font-size: 14px;
     line-height: 1.4;
     color: #555;
 }
 
-/* LINK */
 .card span {
     margin-top: auto;
     font-weight: 600;
     color: #5a4fff;
 }
 
-/* HOVER */
 .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 18px 35px rgba(0,0,0,0.15);
 }
 
-/* FOOTER */
 footer {
     background: #1e1e2f;
     color: #fff;
