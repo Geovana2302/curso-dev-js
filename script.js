@@ -9,7 +9,7 @@ const container = document.getElementById('container-projetos');
 projetos.forEach(projeto => {
     const card = document.createElement('a');
     // Ao usar apenas a barra no final, o navegador busca o index.html automaticamente
-    card.href = `./${projeto.pasta}/`; 
+    card.href = `./${projeto.pasta}/index.html`;
     card.className = 'card';
     
     card.innerHTML = `
