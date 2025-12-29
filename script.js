@@ -1,14 +1,16 @@
-// Liste aqui os nomes exatos das pastas que você tem no GitHub
 const projetos = [
-    { nome: "Cadastro", pasta: "cadastro", arquivo: "cadastro.html" },
-    { nome: "Orçamento", pasta: "orcamento", arquivo: "atividade_orcamento.html" }
+    { nome: "Cadastro", pasta: "cadastro", desc: "Sistema de cadastro" },
+    { nome: "Orçamento", pasta: "orcamento", desc: "Sistema de orçamento" },
+    { nome: "Negócios", pasta: "RequisiçãoDeNegocios", desc: "Atividade de negócios" }
 ];
+
 const container = document.getElementById('container-projetos');
 
 projetos.forEach(projeto => {
-    // Cria o elemento de link (card)
     const card = document.createElement('a');
-    card.href = `./${projeto.pasta}/${projeto.pasta}.html`;    card.className = 'card';
+    // Como agora todos se chamam index.html, basta apontar para a pasta
+    card.href = `./${projeto.pasta}/index.html`; 
+    card.className = 'card';
     
     card.innerHTML = `
         <h3>${projeto.nome}</h3>
