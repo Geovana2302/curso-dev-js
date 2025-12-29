@@ -1,7 +1,6 @@
 const projetos = [
-    { nome: "Cadastro", pasta: "cadastro", desc: "Sistema de cadastro de dados." },
-    { nome: "Orçamento", pasta: "orcamento", desc: "Sistema de cálculo de orçamento." },
-    { nome: "Negócios", pasta: "RequisiçãoDeNegocios", desc: "Atividade de requisição de negócios." }
+    { nome: "Cadastro", pasta: "cadastro", arquivo: "cadastro.html" },
+    { nome: "Orçamento", pasta: "orcamento", arquivo: "atividade_orcamento.html" }
 ];
 
 const container = document.getElementById('container-projetos');
@@ -9,7 +8,7 @@ const container = document.getElementById('container-projetos');
 projetos.forEach(projeto => {
     const card = document.createElement('a');
     // Ao usar apenas a barra no final, o navegador busca o index.html automaticamente
-    card.href = `./${projeto.pasta}/index.html`;
+    card.href = `./${projeto.pasta}/`; 
     card.className = 'card';
     
     card.innerHTML = `
