@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const card = document.createElement("a");
 
         // Caminho correto para GitHub Pages
-        card.href = `./projetos/${projeto.pasta}/${projeto.arquivo}`;
+        card.href = `./exercicios-individuais/projetos/${projeto.pasta}/${projeto.arquivo}`;
         card.classList.add("card");
         card.target = "_blank";
         card.rel = "noopener noreferrer";
