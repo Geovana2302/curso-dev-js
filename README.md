@@ -46,4 +46,7 @@ Ao longo do curso, este repositório será constantemente atualizado com:
 Este repositório reflete minha evolução durante o curso.  
 Sinta-se à vontade para explorar os arquivos, acompanhar meu progresso ou sugerir melhorias!
 
+🌐 Acesse os projetos online:
+https://geovana2302.github.io/curso-dev-js/
+
 ---
